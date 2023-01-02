@@ -21,7 +21,7 @@ body {
     rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
   transition: 1s ease-in-out;
 }
-.face {
+.face-front {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -34,7 +34,15 @@ body {
   transition: 2s ease-in-out;
 }
 
-.face.back {
+.face-back {
+  display: flex;
+  backface-visibility: hidden;
+  transition: 0.5s;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  transition: 2s ease-in-out;
+}
+.face-back.back {
   transform: perspective(600px) rotateY(180deg);
 }
 
@@ -54,4 +62,58 @@ body {
   color: #fff;
   cursor: pointer;
   width: 150px;
+}
+.content {
+  display: flex;
+}
+.left-side {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 20px 20px;
+  background-color: rgb(175, 156, 144);
+  color: white;
+}
+i {
+  margin-right: 10px;
+}
+.contacts {
+  margin-top: 20px;
+}
+.contacts ul li {
+  margin: 10px 0px;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: blue;
+}
+.who {
+  border-bottom: 2px solid white;
+  padding: 5px 0px;
+}
+p {
+  margin: 10px 0px;
+  line-height: 1.5;
+}
+.tools ul li {
+  margin: 10px 0px;
+  list-style-position: inside;
+  list-style-type: "✓";
+}
+
+.tools ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.tools ul > li {
+  width: 50%;
+}
+.languages li {
+  padding-top: 10px;
 }
