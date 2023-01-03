@@ -1,14 +1,29 @@
+/*--------------------------------------------------------------
+# Sacamos los espacios nativos
+--------------------------------------------------------------*/
 * {
   padding: 0;
   margin: 0;
 }
+@font-face {
+  font-family: "domine";
+  src: url("../fonts/domine.ttf");
+}
+
+/*--------------------------------------------------------------
+# Seteamos las fuentes
+--------------------------------------------------------------*/
 body {
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "domine";
 }
+/*--------------------------------------------------------------
+# Contenedor
+--------------------------------------------------------------*/
 .cv {
   width: 40%;
   height: 90vh;
@@ -21,6 +36,9 @@ body {
     rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
   transition: 1s ease-in-out;
 }
+/*--------------------------------------------------------------
+# parte de frente
+--------------------------------------------------------------*/
 .face-front {
   position: absolute;
   display: flex;
@@ -33,8 +51,11 @@ body {
   transform-style: preserve-3d;
   transition: 2s ease-in-out;
 }
-
+/*--------------------------------------------------------------
+# Parte de atras
+--------------------------------------------------------------*/
 .face-back {
+  position: relative;
   display: flex;
   backface-visibility: hidden;
   transition: 0.5s;
@@ -70,8 +91,8 @@ body {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  width: 100%;
-  height: 100%;
+  width: 30%;
+  height: 86vh;
   padding: 20px 20px;
   background-color: rgb(175, 156, 144);
   color: white;
@@ -97,12 +118,12 @@ a:hover {
   border-bottom: 2px solid white;
   padding: 5px 0px;
 }
-p {
+.parrafo p {
   margin: 10px 0px;
   line-height: 1.5;
 }
 .tools ul li {
-  margin: 10px 0px;
+  margin: 7px 0px;
   list-style-position: inside;
   list-style-type: "✓";
 }
@@ -116,4 +137,49 @@ p {
 }
 .languages li {
   padding-top: 10px;
+}
+.right-side {
+  position: relative;
+  width: 70%;
+  padding: 10px 15px;
+}
+.right-side .content {
+  display: flex;
+  flex-direction: column;
+}
+.cv-image {
+  overflow: hidden;
+}
+.name {
+  margin: 10px 0px;
+}
+.laboral-experience {
+  padding: 10px 0px;
+}
+.work {
+  padding: 10px 0px;
+}
+.work ul li {
+  list-style-position: inside;
+  margin-left: 20px;
+  padding: 8px 0px;
+}
+.title {
+  border-bottom: 2px solid black;
+  padding: 5px 0px;
+}
+.henry,
+.NextU,
+.incluyeme {
+  padding: 10px 0px;
+}
+.comeback {
+  position: absolute;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  top: 0px;
+  left: 0px;
+  border: none;
+  cursor: pointer;
 }

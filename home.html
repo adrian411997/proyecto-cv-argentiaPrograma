@@ -1,62 +1,137 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" type="text/css" >
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>CV</title>
   </head>
   <body>
     <div class="cv" id="cv">
-        <div class="face-front front">
-            <img class="perfil" src="images/perfil.jpg" alt="perfil">
-            <div class="titulo">
-                <h1>Adrian Martinez - Full Stack Developer</h1>
+      <div class="face-front front">
+        <img class="perfil" src="images/perfil.jpg" alt="perfil" />
+        <div class="titulo">
+          <h1>Adrian Martinez - Full Stack Developer</h1>
+        </div>
+        <button class="open" onclick="rotate()">Ver mas</button>
+      </div>
+      <div class="face-back back">
+        <div class="content">
+          <div class="left-side">
+            <div class="cv-image">
+              <img class="perfil" src="images/perfil.jpg" />
             </div>
-            <button class="open" onclick="rotate()">Ver mas</button>
-        </div>
-        <div class="face-back back">
-            <div class="content">           
-                <div class="left-side">
-                    <img class="perfil" src="images/perfil.jpg">
-                    <div class="contacts">
-                        <ul>
-                            <li><i class="fa fa-whatsapp"></i>+5493874515979</li>
-                            <li><i class="fa fa-linkedin"></i><a href="mailto:adrian_mart@hotmail.com.ar">Correo</a></li>
-                            <li><i class="fa fa-github"></i><a href="https://github.com/adrian411997">GitHub</a></li>
-                            <li><i class="fa fa-envelope"></i><a href="https://www.linkedin.com/in/adrian-martinez1997/">LinkedIn</a></li>
-                        </ul>
-                    </div>
-                    <div class="who"><h3>¿Quien soy?</h3></div>
-                    <div class="parrafo">
-                    <p>Soy un desarrollador full stack con 2 años de preparacion y trabajos que busca desafios constantes para superarse y ganarse la vida con ello.
-                    </p></div>
-                    <div class="tools">
-                        <div class="who"><h3>Herramientas</h3></div>
-                        <ul>
-                            <li>Javascript</li>
-                            <li>React.js</li>
-                            <li>Node Js</li>
-                            <li>CSS3</li>
-                            <li>HTML5</li>
-                            <li>PostgreSQL</li>
-                            <li>Vue.js</li>
-                        </ul>
-                    </div>
-                    <div class="languages">
-                        <div class="who"> <h3>Idiomas</h3></div>
-                        <li>Ingles</li>  
-                        <li>Español</li>
-                    </div>
-                </div>  <div class="left-xd">
-                    <img class="perfil" src="images/perfil.jpg">
-                </div>  <div class="left-xs">
-                    <img class="perfil" src="images/perfil.jpg">
+            <div class="contacts">
+              <ul>
+                <li><i class="fa fa-whatsapp"></i>+5493874515979</li>
+                <li>
+                  <i class="fa fa-linkedin"></i
+                  ><a href="mailto:adrian_mart@hotmail.com.ar">Correo</a>
+                </li>
+                <li>
+                  <i class="fa fa-github"></i
+                  ><a href="https://github.com/adrian411997">GitHub</a>
+                </li>
+                <li>
+                  <i class="fa fa-envelope"></i
+                  ><a href="https://www.linkedin.com/in/adrian-martinez1997/"
+                    >LinkedIn</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="who"><h3>¿Quien soy?</h3></div>
+            <div class="parrafo">
+              <p>
+                Soy un desarrollador full stack con 2 años de preparacion y
+                trabajos que busca desafios constantes para superarse y ganarse
+                la vida con ello.
+              </p>
+            </div>
+            <div class="tools">
+              <div class="who"><h3>Herramientas</h3></div>
+              <ul>
+                <li>Javascript</li>
+                <li>React.js</li>
+                <li>Node Js</li>
+                <li>CSS3</li>
+                <li>HTML5</li>
+                <li>PostgreSQL</li>
+                <li>Vue.js</li>
+              </ul>
+            </div>
+            <div class="languages">
+              <div class="who"><h3>Idiomas</h3></div>
+              <li>Ingles</li>
+              <li>Español</li>
+            </div>
+          </div>
+          <div class="right-side">
+            <div class="content">
+              <div class="name">
+                <h1>Adrian Martinez</h1>
+                <p>Desarrollador Full Stack</p>
+              </div>
+              <div class="laboral-experience">
+                <div class="title">
+                  <h1>Experiencia laboral</h1>
                 </div>
-            </div>       
+                <div class="work">
+                  <h2>Soy Henry</h2>
+                  <p>(Contrato de formación, 2022)</p>
+                  <ul>
+                    <li>Realizacion de paginas y aplicaciones webs</li>
+                    <li>Uso de herramientas tecnologicas y buenas practicas</li>
+                    <li>Lider de proyectos</li>
+                    <li>Testeo de componentes</li>
+                    <li>Diseño de interfaces</li>
+                  </ul>
+                </div>
+                <div class="work">
+                  <h2>NextU</h2>
+                  <p>(Contrato de formación, 2020-2022)</p>
+                  <ul>
+                    <li>Realizacion de paginas y aplicaciones webs</li>
+                    <li>Uso de herramientas tecnologicas y buenas practicas</li>
+                    <li>Supervisado por profesionales del sector</li>
+                    <li>Testeo de componentes</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="education">
+                <div class="title">
+                  <h2>Educacion</h2>
+                </div>
+                <div class="henry">
+                  <h3>Desarrollador Full Stack</h3>
+                  <p>Soy Henry Bootcamp, 2022</p>
+                </div>
+                <div>
+                  <div class="NextU">
+                    <h3>Programador Web</h3>
+                    <p>NextU, 2021</p>
+                  </div>
+                </div>
+                <div>
+                  <div class="incluyeme">
+                    <h3>Desarrollador Full Stack Avanzado</h3>
+                    <p>Incluyeme.com, 2022</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <button class="comeback" onclick="toOriginal()"">
+          <i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
+        </button>
+      </div>
     </div>
-    <script src="script/script.js"></script>
+    <script src="script/script.js" "></script>
   </body>
 </html>
